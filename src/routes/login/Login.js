@@ -1,28 +1,28 @@
 import ArrowIcon from "../../icons/ArrowIcon";
 import LockIcon from "../../icons/LockIcon";
 import MailIcon from "../../icons/MailIcon";
-import "./Login.css";
+import styles from "./Login.module.css";
 const Login = () => {
   return (
-    <div className="main">
-      <div className="card">
-        <div className="heading">Member Login</div>
+    <div className={styles.main}>
+      <div className={styles.card}>
+        <div className={styles.heading}>Member Login</div>
         <div
           style={{
             marginTop: "48px",
           }}
-          className="inputField"
+          className={styles.inputField}
         >
-          <MailIcon className="inputFieldIcon" />
+          <MailIcon className={styles.inputFieldIcon} />
           <input placeholder="email" />
         </div>
         <div
           style={{
             marginTop: "16px",
           }}
-          className="inputField"
+          className={styles.inputField}
         >
-          <LockIcon className="inputFieldIcon" />
+          <LockIcon className={styles.inputFieldIcon} />
           <input placeholder="password" type="password" />
         </div>
 
@@ -30,7 +30,7 @@ const Login = () => {
           style={{
             marginTop: "64px",
           }}
-          className="loginButton"
+          className={styles.loginButton}
         >
           LOGIN
         </div>
@@ -59,14 +59,6 @@ const Login = () => {
           </div>
           <ArrowIcon style={{ alignSelf: "center" }} />
         </div>
-        {/* <div
-          style={{
-            marginTop: "16px",
-          }}
-          className="signupButton"
-        >
-          SIGN UP
-        </div> */}
       </div>
     </div>
   );

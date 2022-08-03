@@ -12,7 +12,7 @@
 }
 
 .card{
-  width: 400px;
+  width: 350px;
   background-color: white;
   align-self: center;
   border: 2px solid green;
@@ -65,7 +65,7 @@ input{
   font-size: medium;
   border: none;
   padding: 12px 16px;
-  background-color: #22c55e;
+  background-color: var(--primaryColor);
   /* border:2px solid #22c55e; */
   text-align: center;
   font-weight: bold;
